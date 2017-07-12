@@ -1,4 +1,9 @@
-List all of the phone numbers for Jenkins, Charlotte
-Need to come back to this one, phone table did not import properly;
-mysql> SELECT * FROM Phone JOIN Entry ON Phone.EntryId = Entry.id WHERE lastName = 'Jenkins' AND firstName = 'Charlotte';
-Empty set (0.00 sec)
+SELECT content FROM Phone JOIN Entry ON Phone.EntryId = Entry.id WHERE 
+lastName = 'Jenkins' AND firstName = 'Charlotte';
++----------------+
+| content        |
++----------------+
+| (110) 167-3420 |
+| (605) 175-1334 |
++----------------+
+2 rows in set (0.00 sec)
