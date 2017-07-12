@@ -89,3 +89,10 @@ mysql> SHOW TABLES;
 | Phone                           |
 +---------------------------------+
 6 rows in set (0.01 sec)
+
+--OOPS, left out "content" from Phone table! 
+
+ALTER TABLE Phone ADD content VARCHAR(25%), VALUES ('');
+
+--then re-imported data 
+SOURCE data/import-entry.sql;
